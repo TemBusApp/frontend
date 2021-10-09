@@ -17,7 +17,8 @@ const ButtonStyle = styled.button`
   color: var(--bg-primary);
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.31rem;
+  line-height: 1.18rem;
+  letter-spacing: 0.03em;
 
   ${({ disabled }) => disabled ? 'opacity: 0.5' : ''}
 

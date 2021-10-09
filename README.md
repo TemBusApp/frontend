@@ -13,6 +13,7 @@ BusApp is a non-profit project where its objective is that users can be transpor
 - [Support](#support)
 - [License](#license)
 - [Maintainers](#primary-maintainers)
+- [Design](#design-figma)
 
 # Stack
 
@@ -98,3 +99,7 @@ This project is licensed under the [MIT License](LICENSE).
 [devedux](https://github.com/devedux)
 
 [Linneudm](https://github.com/linneudm)
+
+# Design Figma
+
+[busWeb](<https://www.figma.com/file/FYcQPUTz88g6313aMLkWTY/GoBarber-(Copy)?node-id=34%3A1180>)

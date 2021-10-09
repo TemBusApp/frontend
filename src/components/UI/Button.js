@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 function Button(props) {
-  return <ButtonStyle>{props.children}</ButtonStyle>
+  return <ButtonStyle {...props} >{props.children}</ButtonStyle>;
 }
 
 export default Button;
@@ -14,4 +14,14 @@ const ButtonStyle = styled.button`
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  color: #121018;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 21px;
+
+  ${({ disabled}) => 
+    disabled ? `
+      opacity: 0.5
+    ` : ''
+  }
 `

@@ -8,7 +8,7 @@ export default Button;
 
 const ButtonStyle = styled.button`
   width: 100%;
-  width: 340px;
+  max-width: 340px;
   padding: 14px 0;
   background: var(--color-primary);
   border-radius: 10px;

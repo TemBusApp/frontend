@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# BusApp - FRONTEND
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Raising Hands For Injured Paws
 
-## Available Scripts
+BusApp is a non-profit project where its objective is that users can be transported to any destination, separating their tickets from the platform.
 
-In the project directory, you can run:
+## Contents
 
-### `yarn start`
+- [Stack](#stack)
+- [Setup Guide](#setup-guide)
+- [Contribution Guide](#contribution-guide)
+- [Community](#community)
+- [Support](#support)
+- [License](#license)
+- [Maintainers](#primary-maintainers)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| Stack    | Technology                       |
+| -------- | -------------------------------- |
+| Frontend | React, Redux Toolkit             |
+| Styles   | styled components, emotion, clsx |
 
-### `yarn test`
+[![REACT](https://img.shields.io/static/v1?label=react&message=17.0.2&color=blue)](https://shields.io/)
+[![NPM](https://img.shields.io/static/v1?label=npm&message=8.0.0&color=blue)](https://shields.io/)
+[![NODE](https://img.shields.io/static/v1?label=node&message=14.18.0&color=success)](https://shields.io/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://shields.io/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Guide
 
-### `yarn build`
+Basic requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+ Install Node version 14 or higher
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Fork this repository into your own GitHub account.
+- Clone the repo from your GitHub account to your local machine using the following commands
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- you can either use ssh or https
 
-### `yarn eject`
+```bash
+using https:
+$ git clone https://github.com/TemBusApp/frontend.git
+$ cd frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+or
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+using ssh:
+$ git clone git@github.com:TemBusApp/frontend.git
+$ cd frontend
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Creating branch
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+git branch  your-branch-name
+git checkout your-branch-name
 
-## Learn More
+or
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git checkout -b your-branch-name
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the development server, do the following in the `arc-backend` directory:
 
-### Code Splitting
+##Non-Docker Version
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+$ npm install or yarn install
+$ npm run dev or yarn run dev
+```
 
-### Analyzing the Bundle Size
+You can now see the project running on your localhost
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You can edit files on your text-editor, changes will be reflected in your browser.
 
-### Making a Progressive Web App
+## Contribution Guide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Go to `CONTRIBUTING.md`
 
-### Advanced Configuration
+## Community
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We also have public chat rooms on Discord. Drop by and say hello!
 
-### Deployment
+[![](https://img.shields.io/badge/chat-on_Discord-blue.svg?style=for-the-badge&logo=Discord)](https://discord.gg/yNHk9RV6)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Support
 
-### `yarn build` fails to minify
+If you have any feature requests or bug reports, please log them on the [issue tracker](https://github.com/arc-pune/arc-backend/issues/new).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Primary Maintainers
+
+[devedux](https://github.com/devedux)
+
+[Linneudm](https://github.com/linneudm)

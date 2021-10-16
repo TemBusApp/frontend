@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 import logo from '../../assets/logo.png';
 import loginPhoto from '../../assets/login-photo.png';
-import iconEmail from '../../assets/icon-email.svg';
-import iconPassword from '../../assets/icon-password.svg';
+// import iconEmail from '../../assets/icon-email.svg';
+// import iconPassword from '../../assets/icon-password.svg';
 import iconSingup from '../../assets/icon-singup.svg';
 
 import Button from '../../components/UI/Button';
+import Input from '../../components/UI/Input';
+import Label from '../../components/UI/Label';
 
 export default function Login() {
   return (
@@ -22,11 +24,11 @@ export default function Login() {
         <LoginForm className="login-form">
           <h1>Login</h1>
 
-          <label className="sr-only" htmlFor="email">E-mail</label>
-          <input type="email" id="email" placeholder="E-mail" />
+          <Label className="sr-only" htmlFor="email">E-mail</Label>
+          <Input type="email" id="email" placeholder="you@email.com" />
 
-          <label className="sr-only" htmlFor="password">Password</label>
-          <input type="password" id="password" placeholder="******" />
+          <Label className="sr-only" htmlFor="password">Password</Label>
+          <Input type="password" id="password" placeholder="******" />
 
           <Button>Sing in</Button>
 
@@ -104,17 +106,6 @@ export const LoginForm = styled.form`
     margin-bottom: 1rem;
   }
 
-  input {
-    display: flex;
-    color: #666360;
-    font-size: 1em;
-    padding-left: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: #232129;
-  }
   a.forgot-link {
     color: #fff;
     text-align: center;
@@ -123,30 +114,7 @@ export const LoginForm = styled.form`
     margin-top: 1em;
   }
 
-  .sr-only {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
-    -webkit-clip-path: inset(50%) !important;
-      clip-path: inset(50%) !important;  /* 2 */
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;  
-  }
-  .sr-only-focusable:focus,
-  .sr-only-focusable:active {
-    clip: auto !important;
-    -webkit-clip-path: none !important;
-      clip-path: none !important;
-    height: auto !important;
-    margin: auto !important;
-    overflow: visible !important;
-    width: auto !important;
-    white-space: normal !important;
-  }
+  
 `;
 
 export const Footer = styled.footer`

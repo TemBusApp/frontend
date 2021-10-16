@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import logo from '../../assets/logo.png';
 import loginPhoto from '../../assets/login-photo.png';
-// import iconEmail from '../../assets/icon-email.svg';
-// import iconPassword from '../../assets/icon-password.svg';
+import iconEmail from '../../assets/icon-email.svg';
+import iconPassword from '../../assets/icon-password.svg';
 import iconSingup from '../../assets/icon-singup.svg';
 
 import Button from '../../components/UI/Button';
@@ -24,13 +24,33 @@ export default function Login() {
         <LoginForm className="login-form">
           <h1>Login</h1>
 
-          <Label className="sr-only" htmlFor="email">E-mail</Label>
-          <Input type="email" id="email" placeholder="you@email.com" />
+          <Label
+            className="sr-only"
+            htmlFor="email">
+            E-mail
+          </Label>
+          <Input
+            type="email"
+            id="email"
+            placeholder="you@email.com"
+            required="true"
+            data-icon={iconEmail}
+          />
 
-          <Label className="sr-only" htmlFor="password">Password</Label>
-          <Input type="password" id="password" placeholder="******" />
+          <Label
+            className="sr-only"
+            htmlFor="password">
+            Password
+          </Label>
+          <Input
+            type="password"
+            id="password"
+            placeholder="••••••"
+            required="true"
+            data-icon={iconPassword}
+          />
 
-          <Button>Sing in</Button>
+          <Button type="submit">Sing in</Button>
 
           <a className="forgot-link" href="#forgout">I forgot my password</a>
         </LoginForm>

@@ -6,6 +6,10 @@
   --bg-primary: #121018;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #ffffff;
   margin: 0;

@@ -2,22 +2,45 @@ import styled from "styled-components";
 
 function Input(props) {
   return (
-    <InputElement {...props} />
+    <InputGroup>
+      {(props['data-icon'] && props['data-icon'] !== "") ?
+        <img src={props['data-icon']} alt="icon" data-role="none" data-aria-hidden="true" />
+        :
+        ""
+      }
+      <InputElement {...props} />
+    </InputGroup>
   )
 }
 
 export default Input;
 
+const InputGroup = styled.span`
+  display: grid;
+  position: relative;
+  align-items: center;
+
+  img {
+    position: absolute;
+    left: 1rem;
+  }
+`;
+
 const InputElement = styled.input`
   display: flex;
-  color: #666360;
+  color: #ffffff;
   font-size: 1em;
-  padding-left: 2em;
+  padding-left: 3em;
   padding-top: 1em;
   padding-bottom: 1em;
   border: 1px solid transparent;
   border-radius: 10px;
   background-color: #232129;
+  max-width: 340px;
+
+  &::placeholder {
+    color: #666360;
+  }
 
   ${({ disabled }) => disabled ? 'opacity: 0.5' : ''}
 

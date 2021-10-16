@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 import logo from '../../assets/logo.png';
 import loginPhoto from '../../assets/login-photo.png';
+import iconEmail from '../../assets/icon-email.svg';
+import iconPassword from '../../assets/icon-password.svg';
+import iconSingup from '../../assets/icon-singup.svg';
 
 import Button from '../../components/UI/Button';
 
@@ -30,13 +33,21 @@ export default function Login() {
           <a className="forgot-link" href="#forgout">I forgot my password</a>
         </LoginForm>
         <Footer>
-          <a href="#create">Create Account</a>
+          <a href="#create">
+            <img
+              src={iconSingup}
+              alt="SingUp Icon"
+              className="icon-singup"
+              data-role="none"
+              data-aria-hidden="true" />
+            Create Account
+          </a>
         </Footer>
       </LoginPanel>
 
       <PhotoPanel />
     </Container>
-  )
+  );
 }
 
 export const Container = styled.div`
@@ -150,6 +161,16 @@ export const Footer = styled.footer`
     text-align: center;
     font-weight: 700;
     text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon-singup {
+      top: -1px;
+      position: relative;
+      margin-right: .3rem;
+    }
   }
 `;
 

@@ -19,6 +19,8 @@ const InputGroup = styled.span`
   display: grid;
   position: relative;
   align-items: center;
+  width: 100%;
+  max-width: 340px;
 
   img {
     position: absolute;
@@ -35,8 +37,7 @@ const InputElement = styled.input`
   padding-bottom: 1em;
   border: 1px solid transparent;
   border-radius: 10px;
-  background-color: #232129;
-  max-width: 340px;
+  background-color: #232129;  
 
   &::placeholder {
     color: #666360;

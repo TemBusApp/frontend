@@ -114,6 +114,7 @@ export const LoginForm = styled.form`
   grid-row-gap: 7px;
   align-content: center;
   justify-content: center;
+  justify-items: center;
   align-items: center;
   flex-direction: column;
   width: calc(100% - 32px);

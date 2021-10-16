@@ -142,8 +142,9 @@ export const Footer = styled.footer`
   display: grid;
   align-items: center;
   justify-content: center;
-  align-content: space-evenly;
+  align-content: space-between;
   justify-items: center;
+  padding-top: 1rem;
 
   a {
     color: var(--color-primary);
@@ -152,8 +153,6 @@ export const Footer = styled.footer`
     text-decoration: none;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
 
     .icon-singup {
       top: -1px;

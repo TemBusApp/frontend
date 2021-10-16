@@ -169,7 +169,7 @@ export const PhotoPanel = styled.div`
   @media(min-width: 800px) {
     display: flex;
     align-self: flex-end;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-image: url(${loginPhoto});
     background-repeat: no-repeat;

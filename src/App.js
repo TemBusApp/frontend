@@ -1,10 +1,10 @@
 import './App.css';
-import Button from './components/UI/Button';
+import Login from './pages/login';
 
 function App() {
   return (
     <div className="App">
-      <Button>Sign in</Button>
+      <Login />
     </div>
   );
 }
